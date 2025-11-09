@@ -3,7 +3,7 @@ pipeline
     agent any
 
     environment{
-        VERSION_NAME ="1.35"
+       set VERSION_NAME ="1.35"
     }
 
     stages{

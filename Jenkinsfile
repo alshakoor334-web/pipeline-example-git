@@ -17,5 +17,19 @@ pipeline{
 
     }
 
+    post{
+        always{
+            sh 'echo "always"'
+        }
+        
+        success{
+            sh 'echo "sucess"'
+        }
+
+        failure{
+            sh 'echo "failure"'
+        }
+    }
+
 
 }

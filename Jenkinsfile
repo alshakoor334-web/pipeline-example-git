@@ -5,13 +5,13 @@ pipeline{
 
         stage("compile"){
             steps{
-               cmd /c 'javac Test.java'
+               bat 'javac Test.java'
             }
         }
 
         stage("run"){
             steps{
-                cmd /c "java Test"
+                bat "java Test"
             }
         }
 
@@ -19,15 +19,15 @@ pipeline{
 
     post{
         always{
-            cmd /c 'echo "always"'
+            bat 'echo "always"'
         }
         
         success{
-            cmd /c 'echo "sucess"'
+            bat 'echo "sucess"'
         }
 
         failure{
-            cmd /c 'echo "failure"'
+            bat 'echo "failure"'
         }
     }
 

@@ -3,7 +3,7 @@ pipeline
     agent any
 
     environment{
-      bat 'set VERSION_NAME ="1.35"'
+       VERSION_NAME ="1.35"'
     }
 
     stages{
@@ -11,7 +11,7 @@ pipeline
         stage("compile"){
             steps{
                bat 'javac Test.java'
-               bat 'echo "${VERSION_NAME}"'
+               bat 'echo "%VERSION_NAME%"'
             }
         }
 

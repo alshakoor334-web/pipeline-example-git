@@ -3,7 +3,7 @@ pipeline
     agent any
 
     environment{
-       set VERSION_NAME ="1.35"
+      bat 'set VERSION_NAME ="1.35"'
     }
 
     stages{
